@@ -43,7 +43,7 @@ python run.py --citation_url "https://my.clevelandclinic.org/health/diseases/854
 
 #### Provide a Question
 ```bash
-python run.py --citation_url "What is the correct dosage for acetaminophen for infants?"
+python run.py --question "What is the correct dosage for acetaminophen for infants?"
 ```
 
 # Data
@@ -54,3 +54,4 @@ The files are organized as follows:
   - Responses: The responses for each of the seven models are provided within each CSV in the Responses folder.
   - Parsed Statements: Each response is parsed for medically relevant statements, which are included as a list within a column.
   - Fact-Citation Pairs: The facts are paired with citations provided to back each response.
+  - Expert Annotations: The question-annotation pairings from medical experts.

@@ -39,10 +39,12 @@ Main script that processes the given citation URL or question, verifies the info
 #### Provide a Citation URL
 ```bash
 python run.py --citation_url "https://my.clevelandclinic.org/health/diseases/8541-thyroid-disease"
+```
 
 #### Provide a Question
 ```bash
 python run.py --citation_url "What is the correct dosage for acetaminophen for infants?"
+```
 
 # Data
 

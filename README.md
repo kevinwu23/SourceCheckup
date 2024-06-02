@@ -4,7 +4,47 @@ NOTE: This repo is still undergoing updates.
 
 This is the repo for the data and code used in the paper [How well do LLMs cite relevant medical references? An evaluation framework and analyses](https://arxiv.org/abs/2402.02008)
 
-## Data
+## Overview
+SourceCheckup is a tool designed to verify the accuracy of information extracted from a given citation URL or a direct question. The script processes the provided input, queries an AI model for generating questions and verifying responses, and outputs the results in a CSV file. It also provides insights into the fraction of statements supported by at least one citation.
+
+## Modules
+
+### utils.py
+Contains utility functions used in the main script:
+- `extract_contents_from_url(citation_url)`: Extracts contents from the given URL.
+- `GPTWrapper`: A wrapper for querying the AI model with specified prompts and settings.
+
+### run.py
+Main script that processes the given citation URL or question, verifies the information, and outputs the results.
+
+## Inputs and Outputs
+
+### Inputs
+- `citation_url` (optional): URL to the citation to be processed.
+- `question` (optional): Direct question to be processed.
+- `output_file` (optional): Filename for the output CSV (default: "example_output.csv").
+
+### Outputs
+- CSV file containing the decision matrix with statements, citation URLs, decisions, and reasons.
+- Prints the fraction of unique statements supported by at least one citation.
+
+## Running the Script
+
+### Prerequisites
+- Python 3.x
+- Install required libraries: `pandas`, `argparse`, `json`
+
+### Command Line Usage
+
+#### Provide a Citation URL
+```bash
+python run.py --citation_url "https://my.clevelandclinic.org/health/diseases/8541-thyroid-disease"
+
+#### Provide a Question
+```bash
+python run.py --citation_url "What is the correct dosage for acetaminophen for infants?"
+
+# Data
 
 The data are contained in the following Google Drive: [link](https://drive.google.com/drive/folders/1a-i974g3XzLCtZLpTLBbqAwK0olpd5JY?usp=drive_link)
 The files are organized as follows:

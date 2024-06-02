@@ -2,7 +2,7 @@
 
 This is the repo for the data and code used in the paper 
 [How well do LLMs cite relevant medical references? An evaluation framework and analyses](https://arxiv.org/abs/2402.02008)
-![alt text](https://github.com/kevinwu23/SourceCheckup/blob/main/fig2.jpg?raw=true)
+![Main results](https://github.com/kevinwu23/SourceCheckup/blob/main/mainfig.png?raw=true)
 
 ## Overview
 SourceCheckup is a tool designed to verify the accuracy of information extracted from a given citation URL or a direct question. The script processes the provided input, queries an AI model for generating questions and verifying responses, and outputs the results in a CSV file. It also provides insights into the fraction of statements supported by at least one citation.

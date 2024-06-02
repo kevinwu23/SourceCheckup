@@ -1,7 +1,9 @@
 # SourceCheckup
 
-This is the repo for the data and code used in the paper 
+This is the repo for the data and code used in the paper:
+
 [How well do LLMs cite relevant medical references? An evaluation framework and analyses](https://arxiv.org/abs/2402.02008)
+
 ![Main results](https://github.com/kevinwu23/SourceCheckup/blob/main/mainfig.png?raw=true)
 
 ## Overview

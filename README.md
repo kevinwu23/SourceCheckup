@@ -32,9 +32,9 @@ Main script that processes the given citation URL or question, verifies the info
 ## Inputs and Outputs
 
 ### Inputs
-- `citation_url` (optional): URL to the citation to be processed.
-- `question` (optional): Direct question to be processed.
-- `output_file` (optional): Filename for the output CSV (default: "example_output.csv").
+- `citation_url`: URL to the citation to be processed.
+- `question`: Direct question to be processed.
+- `output_file`: Filename for the output CSV (default: "example_output.csv").
 
 ### Outputs
 - CSV file containing the decision matrix with statements, citation URLs, decisions, and reasons.

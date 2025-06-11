@@ -57,3 +57,9 @@ python run.py --citation_url "https://my.clevelandclinic.org/health/diseases/854
 ```bash
 python run.py --question "What is the correct dosage for acetaminophen for infants?"
 ```
+
+### With uv (install here: https://docs.astral.sh/uv/getting-started/installation/)
+```bash
+uv run run.py --citation_url "https://my.clevelandclinic.org/health/diseases/8541-thyroid-disease"
+uv run.py --question "What is the correct dosage for acetaminophen for infants?"
+```
